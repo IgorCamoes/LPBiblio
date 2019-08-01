@@ -1,0 +1,381 @@
+body{
+    margin: 0;
+}
+
+input:focus, button:focus{
+    outline: none;
+}
+
+h2,h3,h4,h5,h6,a{
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+p{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+nav{
+    align-items: center;
+    background-color: whitesmoke;
+    display: flex;
+    height: 15vh;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav > div:first-child{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+nav > div:nth-child(2){
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+nav > div:nth-child(2) a {
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav > div:last-child{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.616);
+    border-style: groove;
+    color: darkgrey;
+    text-align: center;
+    width: 55%;
+}
+
+nav > div:last-child input::placeholder{
+    text-align: center;
+}
+
+nav > div:last-child img{
+    width: 15px;
+    filter: opacity(40%);
+}
+
+nav > div:last-child img:hover{
+    cursor: pointer;
+}
+
+header{
+    align-items: flex-end;
+    background-image: url("../media/banner.jpg");
+    background-size: cover;
+    display: flex;
+    height: 70vh;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+header > div:first-child{
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.800);
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    justify-content: flex-end;
+    width: 5%;    
+}
+
+header > div:first-child h3{
+    color: rgb(196, 196, 196);
+    margin-top: 20px;
+    writing-mode: tb;
+}
+
+header > div:first-child h3:hover{
+    color: white;
+    cursor: pointer;
+}
+
+header > div:last-child{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.800);
+    color: white;
+    flex-wrap: wrap;
+    height: 60%;
+    overflow: visible;
+    width: 30%;
+}
+
+header > div:last-child div, header{
+    display: flex;
+    width: 100%;
+}
+
+header > div:last-child > div:first-child{
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+header > div:last-child > div:first-child span{
+    background-color: white;
+    height: 2px;
+    width: 10%;
+}
+
+header > div:last-child > div:nth-child(2){
+    justify-content: center;
+    flex-wrap: wrap;
+    font-style: italic;
+    text-align: justify;
+    
+}
+
+header > div:last-child > div:nth-child(2) > h3{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+header > div:last-child > div:last-child{
+    justify-content: center;
+}
+
+header > div:last-child > div:last-child button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px 20px;
+    color: white;
+    height: 60%;
+    transition: 0.2s;
+    width: 30%;
+}
+
+header > div:last-child > div:last-child button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.espacamento{
+    align-items: center;
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    font-style: italic;
+
+}
+
+section{
+    display: flex;
+    height: 50vh;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+    transition: 0.2s;
+    width: 50%;
+}
+
+section > div h2, section > div h5{
+    background-color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    width: 25%;;
+}
+
+section > div h5{
+    width: 10%;
+}
+
+section > div:hover{
+    width: 70%;
+}
+
+section > div > h5:hover{
+    cursor: pointer;
+}
+
+section > div:first-child{
+    background-image: url("../media/book1.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+section > div:last-child{
+    background-image: url("../media/book2.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article > div{
+    background-color: black;
+    border-top: 1px solid rgba(255, 255, 255, 0.459);
+    color: white;
+    display: flex;
+    height: 50vh;
+    width: 100%;
+}
+
+article > div > div{
+    width: 50%;
+}
+
+article > div > div:last-child{
+    align-items: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article > div > div:last-child > h2{
+    text-align: center;
+    width: 100%;
+}
+
+article > div > div:last-child > p{
+    width: 50%;
+}
+
+article > div:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+article > div:first-child > div:first-child{
+    background-image: url("../media/article1.jpg");
+    background-size: cover;
+    width: 60%;
+}
+
+article > div:nth-child(2) > div:first-child{
+    background-image: url("../media/article2.jpg");
+    background-size: cover;
+    width: 60%;
+}
+
+article > div:last-child > div:first-child{
+    background-image: url("../media/article3.jpg");
+    background-size: cover;
+    width: 60%;
+}
+
+.barrinha{
+    border-bottom: 10px solid white;
+    display: flex;
+    height: 35vh;
+    width: 100%;
+}
+
+.barrinha > div{
+    filter: saturate(0%);
+    transition: 0.5s;
+    width: 20%;
+}
+
+.barrinha > div:hover{
+    filter: saturate(100%);
+}
+
+.barrinha > div:first-child{
+    background-image: url("../media/livro1.png");
+    background-size: cover;
+}
+
+.barrinha > div:nth-child(2){
+    background-image: url("../media/livro2.png");
+    background-size: cover;
+}
+
+.barrinha > div:nth-child(3){
+    background-image: url("../media/livro3.png");
+    background-size: cover;
+}
+
+.barrinha > div:nth-child(4){
+    background-image: url("../media/livro4.png");
+    background-size: cover;
+}
+
+.barrinha > div:nth-child(5){
+    background-image: url("../media/livro5.png");
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 45vh;
+}
+
+footer > div:nth-child(-n+3){
+    height: 35%;
+    width: 25%;
+}
+
+footer > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+footer > div:nth-child(3) > button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+}
+
+footer > div:nth-child(4){
+    display: flex;
+    height: 2%;
+    justify-content: center;
+    justify-self: flex-start;
+    width: 30%;
+}
+
+footer > div:nth-child(4) > div{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+footer > div:nth-child(4) > div img{
+    cursor: pointer;
+}
+
+footer > span{
+    background-color: white;
+    height: 1px;
+    width: 100%;
+}
+
+footer > div:last-child{
+    align-items: baseline;
+    display: flex;
+    font-size: 8pt;
+    height: 15px;
+    justify-content: space-between;
+    width: 80%;
+}
